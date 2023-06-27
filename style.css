@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+  margin:0;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: flex-start;  */
+  border: solid thick green;
+  background-image: url('https://media0.giphy.com/media/26BRGoqbUQvk8nwTC/giphy.gif');
+  color: white;
+  
+}
+
+
+
+
