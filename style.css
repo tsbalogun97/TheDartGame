@@ -6,13 +6,21 @@ body {
 .mainContainer {
   display: flex;
   justify-content: space-around;
-  /* align-items: flex-start;  */
+  align-content: center; 
   border: solid thick green;
   background-image: url('https://media0.giphy.com/media/26BRGoqbUQvk8nwTC/giphy.gif');
   color: white;
   
 }
 
-
+.bullEyes {
+ border: solid red;
+ height: 800px;
+ width: 800px;
+ display: flex;
+ /* justify-content: center; */
+ align-content: wrap;
+background-image: url('https://banner2.cleanpng.com/20180410/kfq/kisspng-bullseye-shooting-target-clip-art-eye-5acc417546f0d8.3477278715233355412906.jpg');
+}
 
 
