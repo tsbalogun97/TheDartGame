@@ -1,26 +1,122 @@
 body {
-  text-align: center;
+  /* text-align: center; */
   margin:0;
 }
-
-.mainContainer {
+.titleBar{
+  font-size: 32px;
   display: flex;
-  justify-content: space-around;
-  align-content: center; 
-  border: solid thick green;
-  background-image: url('https://media0.giphy.com/media/26BRGoqbUQvk8nwTC/giphy.gif');
-  color: white;
+  justify-content: center;
   
 }
 
-.bullEyes {
- border: solid red;
- height: 800px;
- width: 800px;
- display: flex;
- /* justify-content: center; */
- align-content: wrap;
-background-image: url('https://banner2.cleanpng.com/20180410/kfq/kisspng-bullseye-shooting-target-clip-art-eye-5acc417546f0d8.3477278715233355412906.jpg');
+.mainContainer {
+  width:100%;
+  border: solid thick red;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* justify-content: space-between; */
 }
 
+.playerOne {
+  width: 200px;
+  display:flex;
+  flex-direction: column;
+  border: solid blue;
+}
+
+.playerTwo {
+  width:200px;
+  display: flex;
+  flex-direction: column;
+  border: solid navy;
+  /* background-color: blue; */
+  /* border: solid lemonchiffon; */
+  
+
+}
+
+.woodImg {
+  height: 200px;
+  width: 200px;
+}
+
+.reset {
+  /* display: flex;
+  justify-items: center; */
+  width: 200px;
+  text-align: center;
+  /* align-items: center; */
+
+}
+
+.bttn1, .bttn2 {
+  width: 200px;
+}
+
+.topContainer {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: space-between;
+  /* border: solid purple; */
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  
+  align-items: center;
+}
+
+.midContainer {
+  width: 500px;
+  height: 500px;
+  border: solid blueviolet;
+  display: flex;
+  justify-content: center;
+  background-image: url('https://www.funontherun.com/wp-content/uploads/CarnivalGames/Bullseye/basic-bullseye-easy-eye-outdoors-clipart-clipart.png');
+  background-size: contain;
+  align-items: center;
+  
+
+}
+
+.dart {
+  
+  width: 200px;
+  height: 150px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+
+}
+
+.darthidden {
+  width: 200px;
+  height: 150px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  visibility: hidden;
+}
+
+.leftScore {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightScore {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
