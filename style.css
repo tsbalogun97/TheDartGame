@@ -78,20 +78,53 @@ body {
   border: solid blueviolet;
   display: flex;
   justify-content: center;
-  background-image: url('https://www.funontherun.com/wp-content/uploads/CarnivalGames/Bullseye/basic-bullseye-easy-eye-outdoors-clipart-clipart.png');
-  background-size: contain;
-  align-items: center;
-  
 
+  align-items: center;
 }
+.circle {
+  border: solid green;
+  border-radius: 50%;
+  width: 1000px;
+  height: 500px;  
+  display: flex;
+  background-image: url('https://www.funontherun.com/wp-content/uploads/CarnivalGames/Bullseye/basic-bullseye-easy-eye-outdoors-clipart-clipart.png');
+  background-size: cover;
+}
+
+.rectangle {
+  border: solid 5px red;
+  width: 485px;
+  height: 500px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  align-content: center;
+  border-radius: 50%;
+  
+} 
+
+.box { 
+  border: solid rebeccapurple;
+  width: 15%;
+  height: 24%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  position: relative;
+} 
+
+
 
 .dart {
   
-  width: 200px;
-  height: 150px;
-  position: relative;
-  top: 100px;
-  left: 100px;
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  border: solid red;
+  content:url('https://pngimg.com/d/darts_PNG22.png')
 
 }
 
@@ -119,4 +152,5 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 
