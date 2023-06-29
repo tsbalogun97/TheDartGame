@@ -1,9 +1,10 @@
-
+// making the dart disappear
 const darts = () => {
   let dart = document.querySelector('.dart')
   dart.classList.toggle('darthidden')
 }
 
+// creating score count for both players
 let num = 0
 let num2 = 0
 const scoreLeft = () => {
@@ -19,6 +20,8 @@ const scoreRight = () => {
   score.innerHTML = `Score: ${num2}`
 }
 
+
+//  resetting the game 
 const restart = () => {
   let score = document.querySelector('.rightScore') 
   let point = document.querySelector('.leftScore')
