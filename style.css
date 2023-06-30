@@ -107,7 +107,7 @@ body {
 } 
 
 .box { 
-  border: solid rebeccapurple;
+  /* border: solid rebeccapurple; */
   width: 15%;
   height: 24%;
   margin: auto;

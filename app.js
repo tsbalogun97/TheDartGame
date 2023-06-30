@@ -26,6 +26,7 @@ const scoreLeft = () => {
 }
 
 const scoreRight = () => {
+  moveDart()
   score = document.querySelector('.rightScore')
   num2 += boardScore[dartPosition]
   score.innerHTML = `Score: ${num2}, dartPosition ${dartPosition}`
@@ -33,15 +34,11 @@ const scoreRight = () => {
 }
 
 
+
 //  resetting the game 
 const restart = () => {
   location.reload()
-  // let score = document.querySelector('.rightScore') 
-  // let point = document.querySelector('.leftScore')
-  // score.innerHTML = "Score"
-  // point.innerHTML = "Score"
-  // num = 0 
-  // num2 = 0
+
 }
 
 // creating function to move the dart
@@ -67,35 +64,30 @@ const randomSpots =(min,max) => {
 // creating win state and lose state
 
 // call the function to start the game/check the game status
-const startGame = () => {
-  gameStatus()
-  if(score > 500) {
-    gameOver()
-  }else{
-    console.log(`${playerTwo} playerTwo turn to throw his dart`)
-    }
-  }
 
 
-// game over function
-const gameOver = () => {
-  alert('GAMEOVER')
-  location.reload() 
-// to reload the entire browser to restart the game
 
-}
 
 // create a function that checks the game is still ongoing.
 const gameStatus = () =>{
-  if(score > 500) {
-    console.log(`%c GAME OVER! ${playerOne} wins`)
-    gameOver()
-  }else{
-    console.log(`%c BUMMER! ${playerTwo} wins`) 
+  if(num >= 500) {
+    alert( 'playerOne wins')
+    num = 0; num2 = 0
+    restart()
+
+  }else if(num2 >= 500){
+    alert('playerTwo wins') 
+    num = 0; num2 = 0
+    restart()
+  
   }
+
 }
 
 
 // add key frames that shows messages like " you miss your shot"
 
 // add a toggle function that shows "MK guy that says - Toasted!" possibly add the actual sound
+
+setInterval(gameStatus,500)
+
