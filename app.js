@@ -2,6 +2,8 @@
 const darts = () => {
   let dart = document.querySelector('.dart')
   dart.classList.toggle('darthidden')
+  let dart2 = document.querySelector('.dart2')
+  dart2.classList.toggle('darthidden')
 }
 // storing number where dart hit
 let dartPosition;
@@ -29,7 +31,8 @@ const playMusic =() => {
   let audio = new Audio('http://soundfxcenter.com/video-games/mortal-kombat-3-trilogy/8d82b5_Mortal_Kombat_3_Toasty_Sound_Effect.mp3')
   audio.play()
 }
-
+// adding background sound on page load
+window.onload = 
 
 
 
@@ -37,16 +40,16 @@ const playMusic =() => {
 let num = 0
 let num2 = 0
 const scoreLeft = () => {
-  moveDart()
+  moveDart('playerOne')
   let score = document.querySelector('.leftScore')
   num += boardScore[dartPosition]
   score.innerHTML = `Score: ${num}, dartPosition ${dartPosition}`
 // calling scoreRight to shoot after scoreLeft
-  setTimeout(scoreRight, 2000)
+  setTimeout(scoreRight, 500)
 }
 
 const scoreRight = () => {
-  moveDart()
+  moveDart('playerTwo')
   score = document.querySelector('.rightScore')
   num2 += boardScore[dartPosition]
   score.innerHTML = `Score: ${num2}, dartPosition ${dartPosition}`
@@ -67,16 +70,23 @@ reset.addEventListener('click', ()=>{
 
 // creating function to move the dart
 
-const moveDart = () => {
+const moveDart = (shooter) => {
   let boxes = document.querySelectorAll('.box')
   console.log(boxes)
   dartPosition = randomSpots(1, 24)
   checkMiss()
   let currentBox = boxes[dartPosition -1]
-  let dart = document.createElement('img')
-  dart.className = "dart"
-  // let dart = document.querySelector('.dart').cloneNode()
-  currentBox.append(dart)
+  if(shooter === 'playerOne') {
+    let dart = document.createElement('img')
+    dart.className = "dart"
+    currentBox.append(dart)
+  }else{
+    let dart = document.createElement('img')
+    dart.className = "dart2"
+    currentBox.append(dart)
+  }
+    
+  
 }
 
 // random hitspots

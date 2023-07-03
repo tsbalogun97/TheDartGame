@@ -126,8 +126,19 @@ body {
   top: 38%;
   left: 50%;
   /* border: solid red; */
-  content:url('https://pngimg.com/d/darts_PNG22.png')
+  content:url('https://pngimg.com/d/darts_PNG22.png');
+  /* transform: scaleX(-1) */
+}
 
+.dart2 {
+  
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  content:url('https://i.ibb.co/HTn2c03/Untitled-1.png');
+  
 }
 
 .darthidden {
@@ -169,4 +180,13 @@ body {
 }
 .hidden {
   display: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 255, .2);
+  scale: 1;
+  color: white;
+
+
 }
