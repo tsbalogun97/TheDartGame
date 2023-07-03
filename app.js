@@ -31,20 +31,21 @@ const checkMiss = () => {
   }
 }
 
-// creating a function that plays mk1 audion saying toasted!!
+// creating a function that plays mk1 audio saying toasted!!
 const playMusic =() => {
   let audio = new Audio('http://soundfxcenter.com/video-games/mortal-kombat-3-trilogy/8d82b5_Mortal_Kombat_3_Toasty_Sound_Effect.mp3')
   audio.play()
 }
 // adding background sound on page load
-let audio = new Audio('music/03 Jungle Battle (Stage 1, 7).mp3')
-const playContra=() => {
+let audio = new Audio('music/08 Spring Yard Zone Act 2.mp3')
+const playSonic=() => {
   audio.volume = 0.2
   audio.play()
+  
 }
   
   
-window.onload = playContra()
+window.onload = playSonic()
 
 
 
