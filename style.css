@@ -173,9 +173,11 @@ body {
   z-index: 2;
   position:absolute;
   margin-right: 1110px;
-  margin-top: 440px;
-  transform: scaleX(-1);
-  height: 180px;
+  margin-top: 370px;
+  color: white;
+  text-align: right;
+ 
+  /* height: 180px; */
 
 }
 .hidden {
@@ -187,6 +189,9 @@ button:hover {
   background-color: rgba(0, 0, 255, .2);
   scale: 1;
   color: white;
+}
 
-
+.mkImage {
+  transform: scaleX(-1);
+  height: 180px;
 }
