@@ -38,14 +38,14 @@ const playMusic =() => {
 }
 // adding background sound on page load
 let audio = new Audio('music/08 Spring Yard Zone Act 2.mp3')
-const playSonic=() => {
+const playTunic=() => {
   audio.volume = 0.2
   audio.play()
   
 }
   
   
-window.onload = playSonic()
+window.onload = playTunic()
 
 
 
@@ -121,14 +121,14 @@ const randomSpots =(min,max) => {
 const gameStatus = () =>{
   if(num >= 500) {
     audio.pause()
-    alert( 'playerOne wins')
+    alert( 'T.Woods wins')
     num = 0; num2 = 0
     // restart()
     // location.reload()
 
   }else if(num2 >= 500){
     audio.pause()
-    alert('playerTwo wins') 
+    alert('P.Mickelson wins') 
     num = 0; num2 = 0
     // restart()
     // location.reload()
