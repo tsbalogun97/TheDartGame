@@ -78,7 +78,7 @@ body {
 .midContainer {
   width: 500px;
   height: 500px;
-  border: solid blueviolet;
+  /* border: solid blueviolet; */
   display: flex;
   justify-content: center;
 
