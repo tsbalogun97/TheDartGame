@@ -7,7 +7,7 @@ const darts = () => {
 }
 // storing number where dart hit
 let dartPosition;
-// object that stores the point for hit location for playOne 
+// object that stores the point for hit location for both players 
 let boardScore = { 
   1:0, 19:0, 6:0, 24:0, 2:20, 3:30, 4:30,
   5:10, 7:20, 8:50, 9:100, 10:100,
@@ -15,6 +15,9 @@ let boardScore = {
   16:70, 17:50, 18:10, 20:10, 21:20,
   22:20, 23:10 
 }
+
+
+// creating a function that shows messages like " you miss your shot along with mk1 character popping out
 const checkMiss = () => {
   if(dartPosition === 1 || dartPosition === 19 || dartPosition === 24 || dartPosition === 6){
     console.log('checkMiss');
@@ -27,6 +30,8 @@ const checkMiss = () => {
     }, 500)
   }
 }
+
+// creating a function that plays mk1 audion saying toasted!!
 const playMusic =() => {
   let audio = new Audio('http://soundfxcenter.com/video-games/mortal-kombat-3-trilogy/8d82b5_Mortal_Kombat_3_Toasty_Sound_Effect.mp3')
   audio.play()
@@ -76,7 +81,7 @@ reset.addEventListener('click', ()=>{
   location.reload()
 })
 
-// creating function to move the dart
+// creating function to move the dart for both players
 
 const moveDart = (shooter) => {
   let boxes = document.querySelectorAll('.box')
@@ -132,7 +137,7 @@ const gameStatus = () =>{
 
 
 
-// add key frames that shows messages like " you miss your shot"
+
 
 // add a toggle function that shows "MK guy that says - Toasted!" possibly add the actual sound
 
