@@ -61,6 +61,7 @@ const scoreRight = () => {
   num2 += boardScore[dartPosition]
   score.innerHTML = `Score: ${num2}, dartPosition ${dartPosition}`
   
+  
 }
 
 
@@ -105,7 +106,7 @@ const randomSpots =(min,max) => {
 
 // creating win state and lose state
 
-// call the function to start the game/check the game status
+
 
 
 

@@ -85,7 +85,7 @@ body {
   align-items: center;
 }
 .circle {
-  border: solid green;
+  /* border: solid green; */
   border-radius: 50%;
   width: 1000px;
   height: 500px;  
