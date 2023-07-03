@@ -81,8 +81,8 @@ body {
   /* border: solid blueviolet; */
   display: flex;
   justify-content: center;
-
   align-items: center;
+
 }
 .circle {
   /* border: solid green; */
@@ -95,7 +95,7 @@ body {
 }
 
 .rectangle {
-  border: solid 5px red;
+  /* border: solid 5px red; */
   width: 485px;
   height: 500px;
   display: flex;
