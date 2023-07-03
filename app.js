@@ -13,6 +13,25 @@ let boardScore = {
   16:70, 17:50, 18:10, 20:10, 21:20,
   22:20, 23:10 
 }
+const checkMiss = () => {
+  if(dartPosition === 1 || dartPosition === 19 || dartPosition === 24 || dartPosition === 6){
+    console.log('checkMiss');
+    playMusic()
+    let img = document.querySelector('.mk')
+    img.classList.remove('hidden')
+    // setting timeout to rehidden mk
+    setTimeout(() => {
+      img.classList.add('hidden')
+    }, 500)
+  }
+}
+const playMusic =() => {
+  let audio = new Audio('http://soundfxcenter.com/video-games/mortal-kombat-3-trilogy/8d82b5_Mortal_Kombat_3_Toasty_Sound_Effect.mp3')
+  audio.play()
+}
+
+
+
 
 // creating score count for both players
 let num = 0
@@ -22,7 +41,8 @@ const scoreLeft = () => {
   let score = document.querySelector('.leftScore')
   num += boardScore[dartPosition]
   score.innerHTML = `Score: ${num}, dartPosition ${dartPosition}`
-
+// calling scoreRight to shoot after scoreLeft
+  setTimeout(scoreRight, 2000)
 }
 
 const scoreRight = () => {
@@ -40,6 +60,10 @@ const restart = () => {
   location.reload()
 
 }
+let reset = document.querySelector('.reset')
+reset.addEventListener('click', ()=>{
+  location.reload()
+})
 
 // creating function to move the dart
 
@@ -47,6 +71,7 @@ const moveDart = () => {
   let boxes = document.querySelectorAll('.box')
   console.log(boxes)
   dartPosition = randomSpots(1, 24)
+  checkMiss()
   let currentBox = boxes[dartPosition -1]
   let dart = document.createElement('img')
   dart.className = "dart"
@@ -73,16 +98,18 @@ const gameStatus = () =>{
   if(num >= 500) {
     alert( 'playerOne wins')
     num = 0; num2 = 0
-    restart()
+    // restart()
+    // location.reload()
 
   }else if(num2 >= 500){
     alert('playerTwo wins') 
     num = 0; num2 = 0
-    restart()
-  
+    // restart()
+    // location.reload()
   }
 
 }
+
 
 
 // add key frames that shows messages like " you miss your shot"
