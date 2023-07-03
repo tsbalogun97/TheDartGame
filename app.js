@@ -32,7 +32,14 @@ const playMusic =() => {
   audio.play()
 }
 // adding background sound on page load
-window.onload = 
+let audio = new Audio('music/03 Jungle Battle (Stage 1, 7).mp3')
+const playContra=() => {
+  audio.volume = 0.2
+  audio.play()
+}
+  
+  
+window.onload = playContra()
 
 
 
@@ -106,12 +113,14 @@ const randomSpots =(min,max) => {
 // create a function that checks the game is still ongoing.
 const gameStatus = () =>{
   if(num >= 500) {
+    audio.pause()
     alert( 'playerOne wins')
     num = 0; num2 = 0
     // restart()
     // location.reload()
 
   }else if(num2 >= 500){
+    audio.pause()
     alert('playerTwo wins') 
     num = 0; num2 = 0
     // restart()
