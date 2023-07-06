@@ -31,7 +31,7 @@ const checkMiss = () => {
   }
 }
 
-// creating a function that plays mk1 audio saying toasted!!
+// creating a function that plays mk1 audio saying toasty!!
 const playMusic =() => {
   let audio = new Audio('http://soundfxcenter.com/video-games/mortal-kombat-3-trilogy/8d82b5_Mortal_Kombat_3_Toasty_Sound_Effect.mp3')
   audio.play()

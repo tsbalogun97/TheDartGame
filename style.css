@@ -1,10 +1,10 @@
 body {
   background-image: url('https://media.istockphoto.com/id/1289562025/vector/dark-green-background-with-small-touches-christmas-texture-with-vignette-on-the-sides-and.jpg?s=612x612&w=0&k=20&c=AyUlGOhur7Su8xWtu-3eTx3Nup4YEj-sRT6Wj-e-4nw=');
   margin:0;
+}
   
 
   
-}
 .titleBar{
   font-size: 32px;
   display: flex;
@@ -195,3 +195,17 @@ button:hover {
   transform: scaleX(-1);
   height: 180px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
