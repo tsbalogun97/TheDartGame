@@ -62,7 +62,7 @@ const scoreLeft = () => {
   let score = document.querySelector('.leftScore')
   num += boardScore[dartPosition]
   score.innerHTML = `Score: ${num}, dartPosition ${dartPosition}`
-// calling scoreRight to shoot after scoreLeft
+
   
 }
 
@@ -86,7 +86,6 @@ reset.addEventListener('click', ()=>{
 })
 
 // creating function to move the dart for both players
-
 const moveDart = (shooter) => {
   boxes = document.querySelectorAll('.box')
   console.log(boxes)
@@ -106,30 +105,12 @@ const moveDart = (shooter) => {
   
 }
 
+
 // random hitspots
 const randomSpots =(min,max) => {
   return Math.floor(min + Math.random()* (max-min))
   
 }
-// creating countdowm timer
-// let count = 30;
-// let countdown;
-
-// const timer = () => {
-//   countdown = setInterval(() => {
-    
-//   }, interval);
-
-//   }
-
-
-
-// creating win state and lose state
-
-
-
-
-
 
 // create a function that checks the game is still ongoing.
 const gameStatus = () =>{
@@ -147,12 +128,6 @@ const gameStatus = () =>{
     roundWin[0]++
     round++
     boxes.forEach(clearBoard)
-
-    
-    // restart()
-  
-    // location.reload()
-
   }else if(num2 >= 500){
     // audio.pause()
     alert(`P.Mickelson wins round ${round}`) 
@@ -160,11 +135,11 @@ const gameStatus = () =>{
     roundWin[1]++
     round++
     boxes.forEach(clearBoard)
-    // restart()
-    // location.reload()
+   
   }
 
 }
+
 // creating a round function 
 let round = 1
 let roundWin = [0,0]
@@ -174,10 +149,23 @@ const clearBoard = (box) => {
 }
 }
 
-
-
-
-// add a toggle function that shows "MK guy that says - Toasted!" possibly add the actual sound
-
 setInterval(gameStatus,500)
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
