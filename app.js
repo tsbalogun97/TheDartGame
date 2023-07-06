@@ -1,3 +1,8 @@
+// creating global variables
+let boxes;
+
+
+
 // making the dart disappear
 const darts = () => {
   let dart = document.querySelector('.dart')
@@ -58,7 +63,7 @@ const scoreLeft = () => {
   num += boardScore[dartPosition]
   score.innerHTML = `Score: ${num}, dartPosition ${dartPosition}`
 // calling scoreRight to shoot after scoreLeft
-  setTimeout(scoreRight, 500)
+  
 }
 
 const scoreRight = () => {
@@ -66,8 +71,6 @@ const scoreRight = () => {
   score = document.querySelector('.rightScore')
   num2 += boardScore[dartPosition]
   score.innerHTML = `Score: ${num2}, dartPosition ${dartPosition}`
-  
-  
 }
 
 
@@ -85,7 +88,7 @@ reset.addEventListener('click', ()=>{
 // creating function to move the dart for both players
 
 const moveDart = (shooter) => {
-  let boxes = document.querySelectorAll('.box')
+  boxes = document.querySelectorAll('.box')
   console.log(boxes)
   dartPosition = randomSpots(1, 24)
   checkMiss()
@@ -109,12 +112,17 @@ const randomSpots =(min,max) => {
   
 }
 // creating countdowm timer
-let count = 30;
-let countdown;
+// let count = 30;
+// let countdown;
 
-const timer = () => {
-  countdown = setInterval
-  
+// const timer = () => {
+//   countdown = setInterval(() => {
+    
+//   }, interval);
+
+//   }
+
+
 
 // creating win state and lose state
 
@@ -125,23 +133,46 @@ const timer = () => {
 
 // create a function that checks the game is still ongoing.
 const gameStatus = () =>{
-  if(num >= 500) {
+  if (round >= 4) { 
     audio.pause()
-    alert( 'T.Woods wins')
+    restart()
+    round = 1
+    alert(`GAME OVER\n The score is ${roundWin[0]} - ${roundWin[1]}`)
+    
+  }
+  if(num >= 500) {
+    // audio.pause()
+    alert( `T.woods wins round ${round}`)
     num = 0; num2 = 0
+    roundWin[0]++
+    round++
+    boxes.forEach(clearBoard)
+
+    
     // restart()
+  
     // location.reload()
 
   }else if(num2 >= 500){
-    audio.pause()
-    alert('P.Mickelson wins') 
+    // audio.pause()
+    alert(`P.Mickelson wins round ${round}`) 
     num = 0; num2 = 0
+    roundWin[1]++
+    round++
+    boxes.forEach(clearBoard)
     // restart()
     // location.reload()
   }
 
 }
-
+// creating a round function 
+let round = 1
+let roundWin = [0,0]
+const clearBoard = (box) => {
+  while (box.firstChild) {
+    box.removeChild(box.firstChild)
+}
+}
 
 
 
