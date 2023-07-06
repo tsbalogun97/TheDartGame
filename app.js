@@ -109,6 +109,12 @@ const randomSpots =(min,max) => {
   
 }
 // creating countdowm timer
+let count = 30;
+let countdown;
+
+const timer = () => {
+  countdown = setInterval
+  
 
 // creating win state and lose state
 
