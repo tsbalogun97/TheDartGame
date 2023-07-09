@@ -12,6 +12,8 @@ There is an alert that states who won each rounds.
 This is a link to a website that inspires me to do this game https://thedartsgame.sourceforge.net/ 
 
 
-I also took some element from the game Mortal Kombat 1. https://www.google.com/search?rlz=1C1VDKB_enUS958US958&tbm=vid&sxsrf=AB5stBjZo9-vOaqB9_EutJQi_dWW5U7g-A:1688651339149&q=Toasty+Guy+Mortal+Kombat&sa=X&ved=2ahUKEwjusuC5nPr_AhX9m2oFHaigDEQ4ChDVAnoECBYQAQ&biw=1276&bih=600&dpr=1.5#fpstate=ive&vld=cid:e1e49fa2,vid:JBGpEXbPhms 
+I also took some element from the game Mortal Kombat 1. https://www.youtube.com/watch?v=JBGpEXbPhms
+
+In addition, I also added a well known music from popular game, Sonic the hedgehog.https://www.youtube.com/watch?v=Gsa_4s3CjmI
 
 
