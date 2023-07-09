@@ -1,4 +1,4 @@
-// creating global variables
+// making boxes a global variable
 let boxes;
 
 

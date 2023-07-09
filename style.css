@@ -1,24 +1,26 @@
 body {
-  background-image: url('https://media.istockphoto.com/id/1289562025/vector/dark-green-background-with-small-touches-christmas-texture-with-vignette-on-the-sides-and.jpg?s=612x612&w=0&k=20&c=AyUlGOhur7Su8xWtu-3eTx3Nup4YEj-sRT6Wj-e-4nw=');
   margin:0;
 }
-  
-
-  
 .titleBar{
   font-size: 32px;
   display: flex;
   justify-content: center;
   color: red;
+  background-color: black;
+
 }
 
 .mainContainer {
   width:100%;
-  border: solid thick red;
+  height: 100vh;
+  border: solid thick blue;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  /* justify-content: space-between; */
+  background-image: url('https://saamarketing.co.uk/wp-content/uploads/2022/08/The-Different-Types-of-Technology-GIF.gif'); 
+  background-size: cover;
+  /* background-repeat: no-repeat;  */
+  
+
 }
 
 .playerOne {
@@ -47,8 +49,12 @@ body {
 .reset {
   width: 200px;
   text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color: blue;
+  background-color: red;
+  
 }
-
 
 .bttn1, .bttn2 {
   width: 200px;
@@ -176,8 +182,6 @@ body {
   margin-top: 370px;
   color: white;
   text-align: right;
- 
-  /* height: 180px; */
 
 }
 .hidden {
@@ -189,12 +193,18 @@ button:hover {
   background-color: rgba(0, 0, 255, .2);
   scale: 1;
   color: white;
+  
 }
 
 .mkImage {
   transform: scaleX(-1);
   height: 180px;
 }
+
+  
+
+  
+
 
 
 
