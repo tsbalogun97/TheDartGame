@@ -13,7 +13,7 @@ This is a link to a website that inspires me to do this game https://thedartsgam
 
 I also took some element from the game Mortal Kombat 1. https://www.youtube.com/watch?v=JBGpEXbPhms
 
-In addition, I also added a well known music from the popular game, Sonic the hedgehog.https://www.youtube.com/watch?v=Gsa_4s3CjmI to add some flair to this game. 
+In addition, I also added a snippet of well known music from the popular game, Sonic the hedgehog.https://www.youtube.com/watch?v=Gsa_4s3CjmI to add some flair to this game. 
 
 I really enjoyed making this game. I learned a lot from the challenges I encountered along the way. Through it all, I am happy to bring out my vision of making this game to fruition. 
 
