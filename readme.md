@@ -39,7 +39,7 @@ I also took some element from the game, [Mortal Kombat 1](https://www.youtube.co
 In addition, I also added a snippet of well known music from the popular game, [Sonic the Hedgehog](https://www.youtube.com/watch?v=Gsa_4s3CjmI) in order to add some flair to the game
 
 <h3>MY JOURNEY</h3>
-I really enjoyed making this game. It was very difficult because I was hit with many challenges along the way. Through it all, I am happy to see the vision comes to fruition. 
+I really enjoyed making this game. It was very difficult because I was hit with many challenges along the way. Through it all, I am happy to see the vision of making this game comes to fruition. 
 
 
   
