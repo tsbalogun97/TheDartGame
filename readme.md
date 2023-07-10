@@ -32,7 +32,9 @@ https://github.com/tsbalogun97/tsbalogun97.github.io.git
 
 <h3>CREDITS</h3>
 This is a link to a website that inspires me to make this game https://thedartsgame.sourceforge.net/ 
+
 I also took some element from the game [Mortal Kombat 1](https://www.youtube.com/watch?v=JBGpEXbPhms)
+
 In addition, I also added a snippet of well known music from the popular game, [Sonic the Hedgehog](https://www.youtube.com/watch?v=Gsa_4s3CjmI) in order to add some flair to the game
 
 <h3>MY JOURNEY</h3>
