@@ -63,10 +63,11 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
-  color: yellow;
-  background-color: red;
-  
-}
+  color: rgb(0, 255, 234);
+  background-color:  blue;
+
+  }
+
 
 .bttn1, .bttn2 {
   width: 200px;

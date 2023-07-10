@@ -1,5 +1,5 @@
 <h1 align="center">THE DART GAME</h1>
-This is a two player dart game that is very entertaining  to play.
+This is a two player dart game that is very entertaining to play.
 There are 24 quadrants. Each spot on the dart field has different points. The closest you are to the center; the more points will be generated. 
 There are 3 rounds to the game. The player with the most wins, wins the game.
 To shoot your dart, you must click on the players’ names.
