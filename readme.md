@@ -7,6 +7,22 @@ The first player to reach 500 points wins the round.
 There is a reset button to reset the game. 
 There is an alert that states who won each round.
 
+<h1>BUILT WITH</H1>
+Html
+JavaScript
+CSS
+
+<h1>FUTURE UPDATES</h1>
+The game is still developing; meaning more robust features will be added. 
+Some of the features will include the actual animation throwing the dart. 
+The toasty character will appear on each side of the screen when both players miss their shots. 
+A timer will be added for each round. 
+Game modes such as easy, hard, and beast mode will be added.
+An option to pick different dart boards to choose from will be implemented. 
+
+<h1>SUPPORT</h1>
+Contributions, issues, and feature requests are welcome!
+Give a ⭐️ if you like this project!
 
 This is a link to a website that inspires me to do this game https://thedartsgame.sourceforge.net/ 
 
@@ -16,9 +32,10 @@ I also took some element from the game Mortal Kombat 1. https://www.youtube.com/
 In addition, I also added a snippet of well known music from the popular game, Sonic the Hedgehog in order to add some flair to the game. https://www.youtube.com/watch?v=Gsa_4s3CjmI  
 
 I really enjoyed making this game. I learned a lot from the challenges I encountered along the way. Through it all, I am happy to bring out my vision of making this game to fruition. 
+  
 
-<!-- The follwoing is the screenshot of this game
-![THE DART GAME](Image location) -->
+
+
 
 
 
