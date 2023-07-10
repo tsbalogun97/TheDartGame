@@ -1,14 +1,30 @@
 body {
   margin:0;
 }
+
 .titleBar{
-  font-size: 32px;
+  font-size: 42px;
+  font-weight: bolder;
   display: flex;
   justify-content: center;
-  color: red;
+  color: transparent;
   background-color: black;
-
+  background: url('https://i.etsystatic.com/40340648/r/il/6a5502/4852171115/il_1588xN.4852171115_k1qs.jpg');
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  animation: zoomout 10s ease 0.5s infinite;
 }
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 10%;
+  }
+}
+
+
 
 .mainContainer {
   width:100%;
@@ -52,7 +68,7 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
-  color: navy;
+  color: yellow;
   background-color: red;
   
 }
