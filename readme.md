@@ -14,7 +14,7 @@ There is an alert that states who won each round.
 
 
 <h3>FUTURE UPDATES</h3>
-<li>The game is still developing; meaning more robust features will be added.</li>
+The game is still developing; meaning more robust features will be added.
 <li>Some of the features will include the actual animation throwing the dart.</li> 
 <li>The toasty character will appear on each side of the screen when both players miss their shots.</li> 
 <li>A timer will be added for each round.</li> 
