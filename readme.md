@@ -27,7 +27,7 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 <h3>LINK TO REPO</h3>
-tsbalogun97.github.io.git
+https://github.com/tsbalogun97/tsbalogun97.github.io.git
 
 
 <h3>CREDITS</h3>
